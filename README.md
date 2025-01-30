@@ -38,8 +38,11 @@ See `community/CONTRIBUTING.md` for guidelines on how to contribute to this proj
 
 ## License
 
-[License details to be determined]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-[Contact information to be added] 
+For questions, suggestions, or collaboration:
+- **Author**: Monty Craig
+- **Email**: montycraig@hotmail.com
+- **GitHub**: [@MontyCraig](https://github.com/MontyCraig) 
