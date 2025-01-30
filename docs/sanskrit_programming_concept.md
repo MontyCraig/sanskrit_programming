@@ -1,4 +1,4 @@
-# Sanskrit Programming Language (संस्कृत प्रोग्रामिंग भाषा)
+# Sanskrit Programming Language
 
 ## Overview
 Sanskrit, often called "the perfect language" due to its precise grammatical structure and unambiguous nature, presents a unique opportunity for creating a programming language that bridges ancient linguistic wisdom with modern computing paradigms.
@@ -11,28 +11,28 @@ Sanskrit, often called "the perfect language" due to its precise grammatical str
 ## Language Features
 
 ### 1. Grammar-Based Syntax
-#### Case System (विभक्ति) Implementation
-- **Nominative (प्रथमा)**: Variable declarations and subjects
-- **Accusative (द्वितीया)**: Objects and direct parameters
-- **Instrumental (तृतीया)**: Methods and function calls
-- **Dative (चतुर्थी)**: Target assignments and returns
-- **Ablative (पञ्चमी)**: Source operations and exceptions
-- **Genitive (षष्ठी)**: Property access and ownership
-- **Locative (सप्तमी)**: Scope and context definitions
+#### Case System (Vibhakti) Implementation
+- **Nominative (Prathama)**: Variable declarations and subjects
+- **Accusative (Dvitiya)**: Objects and direct parameters
+- **Instrumental (Tritiya)**: Methods and function calls
+- **Dative (Chaturthi)**: Target assignments and returns
+- **Ablative (Panchami)**: Source operations and exceptions
+- **Genitive (Shashthi)**: Property access and ownership
+- **Locative (Saptami)**: Scope and context definitions
 
 ### 2. Data Types
 #### Primary Types
-- **द्रव्य (dravya)**: Objects
-- **गुण (guṇa)**: Properties/Attributes
-- **क्रिया (kriyā)**: Actions/Functions
-- **संख्या (saṅkhyā)**: Numbers
-- **वर्ण (varṇa)**: Characters
-- **सत्य (satya)**: Boolean
+- **Dravya (द्रव्य)**: Objects
+- **Guna (गुण)**: Properties/Attributes
+- **Kriya (क्रिया)**: Actions/Functions
+- **Sankhya (संख्या)**: Numbers
+- **Varna (वर्ण)**: Characters
+- **Satya (सत्य)**: Boolean
 
 #### Complex Types
-- **समुच्चय (samuccaya)**: Arrays
-- **वर्ग (varga)**: Classes
-- **कोश (kośa)**: Dictionaries
+- **Samuchaya (समुच्चय)**: Arrays
+- **Varga (वर्ग)**: Classes
+- **Kosha (कोश)**: Dictionaries
 
 ### 3. Control Structures
 #### Flow Control
