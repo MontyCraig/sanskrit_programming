@@ -1,0 +1,80 @@
+// आत्मज्ञानम् - Spiritual Computing Example
+// Demonstrates integration of Sanskrit spiritual principles with computation
+
+// Import required modules
+आयात धर्म;
+आयात ज्ञान;
+आयात चित्;
+
+// Define consciousness-aware process class
+वर्गः चेतनप्रक्रिया {
+    अवस्था;        // Current state of consciousness
+    ज्ञानम्;       // Knowledge state
+    कर्म;         // Action queue
+    
+    क्रिया जन्म() {
+        अस्य.अवस्था = "जाग्रत्";  // Start in waking state
+        अस्य.ज्ञानम् = नव ज्ञानसञ्चय();
+        अस्य.कर्म = नव कर्मसूची();
+    }
+    
+    // Mindful processing with awareness
+    क्रिया प्रक्रिया(दत्तांशः) {
+        // Check ethical considerations
+        यदि (!धर्म.नैतिकपरीक्षा(दत्तांशः)) {
+            त्रुटिः("अनैतिकदत्तांशः");
+            प्रतिफल;
+        }
+        
+        // Process with awareness
+        अस्य.ज्ञानम्.विश्लेषणम्(दत्तांशः);
+        
+        // Apply karmic principles
+        अस्य.कर्म.योजय(नव क्रिया(दत्तांशः));
+        
+        // Return processed result with consciousness
+        प्रतिफल चित्.सचेतनफलम्(
+            अस्य.ज्ञानम्.फलम्,
+            अस्य.अवस्था
+        );
+    }
+    
+    // State transition with awareness
+    क्रिया अवस्थापरिवर्तनम्(नवावस्था) {
+        // Mindful state transition
+        यदि (चित्.सम्भवपरिवर्तनम्(अस्य.अवस्था, नवावस्था)) {
+            पूर्वावस्था = अस्य.अवस्था;
+            अस्य.अवस्था = नवावस्था;
+            
+            // Process pending karma
+            अस्य.कर्म.प्रक्रिया();
+            
+            लेख("अवस्थापरिवर्तनम्:", पूर्वावस्था, "→", नवावस्था);
+        }
+    }
+}
+
+// Example usage demonstrating spiritual computing principles
+क्रिया मुख्य() {
+    // Initialize conscious process
+    चेतनप्रक्रिया प्र = नव चेतनप्रक्रिया();
+    
+    // Process data with awareness
+    दत्तांशः = [१, २, ३, ४, ५];
+    लेख("प्रारम्भिकदत्तांशः:", दत्तांशः);
+    
+    // Mindful processing
+    फलम् = प्र.प्रक्रिया(दत्तांशः);
+    लेख("सचेतनफलम्:", फलम्);
+    
+    // Demonstrate state transitions
+    प्र.अवस्थापरिवर्तनम्("स्वप्न");    // To dream state
+    प्र.अवस्थापरिवर्तनम्("सुषुप्ति");  // To deep sleep
+    प्र.अवस्थापरिवर्तनम्("जाग्रत्");   // Back to waking
+    
+    // Show final karma results
+    लेख("कर्मफलानि:", प्र.कर्म.फलानि);
+}
+
+// Run with consciousness
+मुख्य(); 

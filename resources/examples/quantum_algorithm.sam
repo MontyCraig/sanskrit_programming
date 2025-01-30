@@ -1,0 +1,76 @@
+// क्वान्टमगणनम् - Quantum Computing Example
+// Demonstrates quantum superposition and entanglement using Sanskrit's precise state descriptions
+
+// Import quantum computing modules
+आयात क्वान्टम्;
+आयात गणित;
+आयात लेख;
+
+// Define quantum register class
+वर्गः क्वान्टमपञ्जिका {
+    क्युबिट्सूची;    // List of qubits
+    स्थितिः;        // Current state
+    
+    क्रिया जन्म(संख्या क्युबिट्संख्या) {
+        अस्य.क्युबिट्सूची = क्वान्टम्.नवक्युबिट्सूची(क्युबिट्संख्या);
+        अस्य.स्थितिः = "आधारः";  // Base state |0⟩
+    }
+    
+    // Apply Hadamard gate to create superposition
+    क्रिया हडामार्डः(संख्या क्युबिट्क्रमः) {
+        क्वान्टम्.हडामार्डः(अस्य.क्युबिट्सूची[क्युबिट्क्रमः]);
+        अस्य.स्थितिः = "अध्यारोपः";  // Superposition state
+    }
+    
+    // Apply CNOT gate for entanglement
+    क्रिया नियन्त्रितनञ्(संख्या नियन्त्रकः, संख्या लक्ष्यम्) {
+        क्वान्टम्.नियन्त्रितनञ्(
+            अस्य.क्युबिट्सूची[नियन्त्रकः],
+            अस्य.क्युबिट्सूची[लक्ष्यम्]
+        );
+        अस्य.स्थितिः = "गुम्फितम्";  // Entangled state
+    }
+    
+    // Measure quantum state
+    क्रिया मापनम्() {
+        सूची परिणामाः = [];
+        कृते (संख्या इ = ०; इ < अस्य.क्युबिट्सूची.दैर्घ्यम्; इ = इ + १) {
+            परिणामाः.योजय(क्वान्टम्.माप(अस्य.क्युबिट्सूची[इ]));
+        }
+        अस्य.स्थितिः = "मापितम्";  // Measured state
+        प्रतिफल परिणामाः;
+    }
+}
+
+// Implement quantum teleportation algorithm
+क्रिया क्वान्टमसञ्चारः(क्वान्टमपञ्जिका पञ्जिका) {
+    // Create Bell pair for quantum teleportation
+    पञ्जिका.हडामार्डः(१);
+    पञ्जिका.नियन्त्रितनञ्(१, २);
+    
+    // Perform teleportation operations
+    पञ्जिका.नियन्त्रितनञ्(०, १);
+    पञ्जिका.हडामार्डः(०);
+    
+    // Measure and return results
+    प्रतिफल पञ्जिका.मापनम्();
+}
+
+// Main program demonstrating quantum teleportation
+क्रिया मुख्य() {
+    // Initialize quantum register with 3 qubits
+    क्वान्टमपञ्जिका पञ्जिका = नव क्वान्टमपञ्जिका(३);
+    
+    // Prepare initial state
+    लेख("प्रारम्भिकस्थितिः:", पञ्जिका.स्थितिः);
+    
+    // Apply quantum teleportation
+    सूची परिणामाः = क्वान्टमसञ्चारः(पञ्जिका);
+    
+    // Display results
+    लेख("अन्तिमस्थितिः:", पञ्जिका.स्थितिः);
+    लेख("मापनपरिणामाः:", परिणामाः);
+}
+
+// Run the program
+मुख्य(); 

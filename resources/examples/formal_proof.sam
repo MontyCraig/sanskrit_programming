@@ -1,0 +1,92 @@
+// औपपत्तिकम् - Formal Proof System
+// Demonstrates Sanskrit's natural mapping to logical proofs
+
+// Import required modules
+आयात तर्क;    // Logic module
+आयात लेख;     // Print module
+
+// Define a theorem class
+वर्गः प्रमेयम् {
+    नाम;        // Name of the theorem
+    आधाराः;     // List of axioms
+    सिद्धान्तः;  // Statement to prove
+    
+    क्रिया जन्म(नामपरम्, आधारसूची, सिद्धान्तपरम्) {
+        अस्य.नाम = नामपरम्;
+        अस्य.आधाराः = आधारसूची;
+        अस्य.सिद्धान्तः = सिद्धान्तपरम्;
+    }
+}
+
+// Define a proof step
+वर्गः प्रमाणपदम् {
+    वक्तव्यम्;   // Statement
+    कारणम्;    // Reason/justification
+    
+    क्रिया जन्म(वक्तव्यपरम्, कारणपरम्) {
+        अस्य.वक्तव्यम् = वक्तव्यपरम्;
+        अस्य.कारणम् = कारणपरम्;
+    }
+}
+
+// Define the proof verifier
+क्रिया सत्यापनम्(प्रमेयम् प्र, सूची प्रमाणानि) {
+    // Verify each step follows from previous steps and axioms
+    कृते (संख्या इ = ०; इ < प्रमाणानि.दैर्घ्यम्; इ = इ + १) {
+        प्रमाणपदम् वर्तमानम् = प्रमाणानि[इ];
+        
+        यदि (!तर्क.वैधम्(वर्तमानम्.वक्तव्यम्, वर्तमानम्.कारणम्)) {
+            लेख("अवैधः तर्कः:", वर्तमानम्.वक्तव्यम्);
+            प्रतिफल असत्य;
+        }
+    }
+    
+    // Verify final step matches theorem statement
+    यदि (प्रमाणानि[प्रमाणानि.दैर्घ्यम् - १].वक्तव्यम् != प्र.सिद्धान्तः) {
+        लेख("सिद्धान्तः न प्राप्तः");
+        प्रतिफल असत्य;
+    }
+    
+    प्रतिफल सत्य;
+}
+
+// Example usage: Prove a simple logical theorem
+क्रिया मुख्य() {
+    // Define a simple theorem about transitivity
+    सूची आधाराः = [
+        "सर्वे मनुष्याः मर्त्याः",      // All humans are mortal
+        "सर्वे विद्वांसः मनुष्याः"     // All scholars are human
+    ];
+    
+    प्रमेयम् प्र = नव प्रमेयम्(
+        "मर्त्यविद्वत्प्रमेयम्",
+        आधाराः,
+        "सर्वे विद्वांसः मर्त्याः"     // Therefore, all scholars are mortal
+    );
+    
+    // Construct the proof
+    सूची प्रमाणानि = [
+        नव प्रमाणपदम्(
+            "सर्वे मनुष्याः मर्त्याः",
+            "आधारः १"
+        ),
+        नव प्रमाणपदम्(
+            "सर्वे विद्वांसः मनुष्याः",
+            "आधारः २"
+        ),
+        नव प्रमाणपदम्(
+            "सर्वे विद्वांसः मर्त्याः",
+            "व्याप्तिः"                // By transitivity
+        )
+    ];
+    
+    // Verify the proof
+    यदि (सत्यापनम्(प्र, प्रमाणानि)) {
+        लेख("प्रमेयं सिद्धम्");        // Theorem proved
+    } अन्यथा {
+        लेख("प्रमेयं न सिद्धम्");      // Proof invalid
+    }
+}
+
+// Run the program
+मुख्य(); 

@@ -1,0 +1,46 @@
+// बुद्बुद्क्रमणम् - Bubble Sort Implementation
+// Demonstrates basic language features including functions, loops, and arrays
+
+// Import required modules
+आयात गणित;  // Mathematics module
+आयात लेख;   // Print module
+
+// Define the main sorting function
+क्रिया बुद्बुद्क्रमणम्(सूची अङ्काः) {
+    संख्या दैर्घ्यम् = अङ्काः.दैर्घ्यम्;
+    सत्य परिवर्तनम् = सत्य;
+
+    यावत् (परिवर्तनम्) {
+        परिवर्तनम् = असत्य;
+        
+        कृते (संख्या इ = ०; इ < दैर्घ्यम् - १; इ = इ + १) {
+            यदि (अङ्काः[इ] > अङ्काः[इ + १]) {
+                // Swap elements
+                संख्या अस्थायी = अङ्काः[इ];
+                अङ्काः[इ] = अङ्काः[इ + १];
+                अङ्काः[इ + १] = अस्थायी;
+                परिवर्तनम् = सत्य;
+            }
+        }
+    }
+    
+    प्रतिफल अङ्काः;  // Return sorted array
+}
+
+// Main program
+क्रिया मुख्य() {
+    // Initialize array
+    सूची अङ्काः = [५, ३, ८, १, ४, २, ७, ६];
+    
+    // Print original array
+    लेख("मूलक्रमः:", अङ्काः);
+    
+    // Sort array
+    अङ्काः = बुद्बुद्क्रमणम्(अङ्काः);
+    
+    // Print sorted array
+    लेख("क्रमितम्:", अङ्काः);
+}
+
+// Run program
+मुख्य(); 
