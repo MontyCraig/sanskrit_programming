@@ -4,3 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # Conventional-commit subjects ("chore(deps): bump ...") so Dependabot PRs
+    # pass the CGaaS commit-message gate.
+    commit-message:
+      prefix: "chore"
+      include: "scope"

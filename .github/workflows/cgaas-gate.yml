@@ -1,0 +1,107 @@
+name: CGaaS Gate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  conventional-commits:
+    name: Conventional Commits
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate commit messages
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+          PUSH_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          range=""
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            range="${PR_BASE_SHA}..${PR_HEAD_SHA}"
+          elif [[ ! "$PUSH_BEFORE_SHA" =~ ^0+$ ]]; then
+            range="${PUSH_BEFORE_SHA}..${PUSH_SHA}"
+          fi
+
+          types='feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert'
+          pattern="^(${types})(\\([a-z0-9._/-]+\\))?!?: .+"
+          invalid=0
+
+          if [[ -n "$range" ]]; then
+            while IFS=$'\t' read -r sha subject; do
+              [[ -n "$sha" ]] || continue
+              if [[ ! "$subject" =~ $pattern ]]; then
+                echo "INVALID: $sha $subject"
+                invalid=1
+              fi
+            done < <(git log --no-merges --format='%H%x09%s' "$range")
+          else
+            subject="$(git log -1 --format=%s)"
+            sha="$(git rev-parse HEAD)"
+            if [[ ! "$subject" =~ $pattern ]]; then
+              echo "INVALID: $sha $subject"
+              invalid=1
+            fi
+          fi
+
+          if ((invalid == 1)); then
+            echo "Commit messages must follow conventional commits."
+            exit 1
+          fi
+
+  repository-quality:
+    name: Documentation And Repo Quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install quality dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install ruff yamllint
+          npm install -g markdownlint-cli2
+
+      - name: Run repository quality checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m compileall quality_tests
+          ruff check quality_tests
+          markdownlint-cli2 \
+            "*.md" \
+            "community/**/*.md" \
+            "docs/**/*.md" \
+            "tasks/**/*.md"
+          yamllint .github/workflows
