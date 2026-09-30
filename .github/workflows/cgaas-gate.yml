@@ -26,17 +26,24 @@ jobs:
 
       - name: Validate commit messages
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+          PUSH_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
 
           range=""
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            range="${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
-          elif [[ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]]; then
-            range="${{ github.event.before }}..${{ github.sha }}"
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            range="${PR_BASE_SHA}..${PR_HEAD_SHA}"
+          elif [[ ! "$PUSH_BEFORE_SHA" =~ ^0+$ ]]; then
+            range="${PUSH_BEFORE_SHA}..${PUSH_SHA}"
           fi
 
-          pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9._/-]+\))?!?: .+'
+          types='feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert'
+          pattern="^(${types})(\\([a-z0-9._/-]+\\))?!?: .+"
           invalid=0
 
           if [[ -n "$range" ]]; then
@@ -76,7 +83,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install quality dependencies
         shell: bash
