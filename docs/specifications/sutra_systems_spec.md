@@ -47,7 +47,7 @@
     }
 }
 
-```text
+```
 ## 2. मीमांसा System (Interpretation)
 
 ### 2.1 Core Principles
@@ -85,7 +85,7 @@
     }
 }
 
-```text
+```
 ## 3. वेदान्त System (Integration)
 
 ### 3.1 Core Principles
@@ -123,7 +123,7 @@
     }
 }
 
-```text
+```
 ## 4. तन्त्र System (Energy and Resources)
 
 ### 4.1 Core Principles
@@ -161,7 +161,7 @@
     }
 }
 
-```text
+```
 ## 5. आयुर्वेद System (Balance and Health)
 
 ### 5.1 Core Principles
@@ -200,7 +200,7 @@
     }
 }
 
-```text
+```
 ## Integration Guidelines
 
 ### 1. System Interaction
@@ -218,7 +218,7 @@
     }
 }
 
-```text
+```
 ### 2. Validation Rules
 
 - Each system must maintain its core principles
@@ -238,7 +238,7 @@
     }
 }
 
-```text
+```
 ## Implementation Strategy
 
 1. **Core Systems**

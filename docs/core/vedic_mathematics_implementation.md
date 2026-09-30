@@ -19,7 +19,7 @@
     }
 }
 
-```text
+```
 ### 1.2 Advanced Operation Sutras
 
 ```sanskrit
@@ -34,7 +34,7 @@
     }
 }
 
-```text
+```
 ## 2. Number System Integration (सङ्ख्यापद्धतिः)
 
 ### 2.1 Vedic Number Types
@@ -52,7 +52,7 @@
     }
 }
 
-```text
+```
 ### 2.2 Sacred Number Operations
 
 ```sanskrit
@@ -67,7 +67,7 @@
     }
 }
 
-```text
+```
 ## 3. Quantum Integration (क्वान्टमसमन्वयः)
 
 ### 3.1 Quantum State Mapping
@@ -84,7 +84,7 @@
     }
 }
 
-```text
+```
 ### 3.2 Entangled Computations
 
 ```sanskrit
@@ -99,7 +99,7 @@
     }
 }
 
-```text
+```
 ## 4. Sound-Based Mathematics (नादगणितम्)
 
 ### 4.1 Mantra Integration
@@ -116,7 +116,7 @@
     }
 }
 
-```text
+```
 ### 4.2 Vibration Mathematics
 
 ```sanskrit
@@ -131,7 +131,7 @@
     }
 }
 
-```text
+```
 ## 5. Optimization Engine (अनुकूलनयन्त्रम्)
 
 ### 5.1 Pattern Recognition
@@ -148,7 +148,7 @@
     }
 }
 
-```text
+```
 ### 5.2 Performance Optimization
 
 ```sanskrit
@@ -163,7 +163,7 @@
     }
 }
 
-```text
+```
 ## 6. Consciousness Integration (चेतनासमन्वयः)
 
 ### 6.1 Consciousness-Aware Calculations
@@ -180,7 +180,7 @@
     }
 }
 
-```text
+```
 ### 6.2 Spiritual Mathematics
 
 ```sanskrit
@@ -195,7 +195,7 @@
     }
 }
 
-```text
+```
 ## Implementation Guidelines
 
 1. **Core Implementation**

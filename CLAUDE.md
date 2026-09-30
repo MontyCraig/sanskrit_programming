@@ -16,34 +16,31 @@ This innovative project aims to:
 
 ## Directory Structure
 
-```
+```text
 sanskrit_programming/
 ├── docs/                         # Comprehensive documentation
 │   ├── concept/                  # Core language concepts and philosophy
+│   ├── core/                     # Core implementation notes (e.g. Vedic mathematics)
+│   ├── improvements/             # Improvement proposals
+│   ├── reports/                  # Project reports
 │   ├── roadmap/                  # Development roadmap and milestones
-│   ├── specifications/           # Language specifications and standards
-│   └── research/                 # Research papers and references
-├── src/                          # Source code implementation
-│   ├── compiler/                 # Compiler implementation
-│   ├── runtime/                  # Runtime environment
-│   └── stdlib/                   # Standard library
-├── tools/                        # Development tools
-│   ├── ide/                      # IDE integration
-│   ├── build/                    # Build tools
-│   └── debugger/                 # Debugging tools
-├── tests/                        # Test suite
-│   ├── unit/                     # Unit tests
-│   ├── integration/              # Integration tests
-│   └── performance/              # Performance benchmarks
+│   └── specifications/           # Language specifications and standards
+├── src/core/number.sam           # Prototype language artifact
+├── tests/core/number_test.sam    # Prototype language test artifact
+├── quality_tests/                # Python repository-quality tests (run in CI)
 ├── community/                    # Community resources
 ├── resources/                    # Learning and reference materials
 ├── tasks/                        # Project tasks and planning
-├── .github/                      # GitHub workflows and templates
+├── .github/                      # GitHub workflows and Dependabot configuration
+├── requirements-dev.txt          # Quality tooling (no runtime Python dependencies yet)
+├── pytest.ini                    # pytest configuration
 ├── README.md                     # Project overview
 ├── GIT_README.md                 # Git workflow documentation
-├── LICENSE                       # Project license
+├── LICENSE                       # MIT License
 └── CLAUDE.md                     # This documentation file
 ```
+
+Planned (not yet present): `src/compiler/`, `src/runtime/`, `src/stdlib/`, `tools/` (IDE, build, debugger), `tests/unit/`, `tests/integration/`, `tests/performance/`, `docs/research/`.
 
 ## Key Components
 
@@ -98,6 +95,9 @@ sanskrit_programming/
 - Audio libraries (for sound-based features)
 
 ### Python Packages
+
+Planned dependencies for the future compiler, runtime and audio features. Nothing in this list is installed today; the only Python requirements are the quality tools in `requirements-dev.txt`.
+
 ```
 # Core dependencies
 pydantic>=2.0.0           # Data validation
@@ -122,36 +122,27 @@ librosa>=0.9.0           # Audio analysis
 
 ### Basic Setup
 ```bash
-# Clone repository (if from external source)
 cd sanskrit_programming
 
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
+# In an isolated Python environment, install the quality tooling
+# (the project has no runtime Python dependencies yet)
+pip install -r requirements-dev.txt
 
 # Install Sanskrit fonts (for proper display)
 sudo apt install fonts-indic
 
-# Verify installation
-python -c "import sanskrit_programming; print('Installation successful')"
+# Verify the repository quality checks pass
+pytest quality_tests
 ```
 
 ### Development Setup
 ```bash
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Install pre-commit hooks
-pre-commit install
-
-# Run tests
-pytest tests/
-
-# Build documentation
-cd docs && make html
+# The same checks the CI workflows run (markdownlint needs Node.js 22+:
+# npm install -g markdownlint-cli)
+pytest quality_tests --cov=quality_tests --cov-report=term-missing --cov-fail-under=90
+ruff check quality_tests
+yamllint .github/workflows
+markdownlint "**/*.md" --ignore node_modules
 ```
 
 ## Quality Automation
@@ -234,6 +225,9 @@ Current implementation status:
 ## Common Commands
 
 ### Compiler Usage
+
+Planned interface: the compiler and these command-line tools are not implemented yet.
+
 ```bash
 # Compile Sanskrit source
 sanskrit-compile program.sk -o program
@@ -253,17 +247,9 @@ sanskrit-trans program.sk --to-roman
 
 ### Development
 ```bash
-# Run tests
-pytest tests/
-
-# Format code
-black src/
-
-# Type checking
-mypy src/
-
-# Build documentation
-cd docs && make html
+# Repository quality checks (see Development Setup)
+pytest quality_tests
+ruff check quality_tests
 ```
 
 ## Troubleshooting
@@ -341,6 +327,6 @@ This project welcomes contributions from:
 
 ---
 
-*Last Updated: November 5, 2025*
+*Last Updated: September 30, 2026*
 *Document Version: 1.0*
 *Status: Active research and development*

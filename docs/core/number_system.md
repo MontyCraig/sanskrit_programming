@@ -41,7 +41,7 @@ The system implements the 16 Vedic Sutras for efficient computation:
 // Vedic multiplication using निखिलं नवतश्चरमं दशतः
 फलम् = क.वैदिकगणितम्("गुणनम्", ख);
 
-```text
+```
 ## Sacred Geometry Integration
 
 Yantra-based operations incorporate sacred geometry:
@@ -55,7 +55,7 @@ Yantra-based operations incorporate sacred geometry:
 कोणाः = यन्त्रम्.कोणाः();
 आकृतिः = यन्त्रम्.आकृतिः();
 
-```text
+```
 ## Sound-Based Computation
 
 Mantra integration allows sound-based mathematical operations:
@@ -69,7 +69,7 @@ Mantra integration allows sound-based mathematical operations:
 नादः = मन्त्रः.नादशक्तिः();
 स्वरः = मन्त्रः.स्वरमाला();
 
-```text
+```
 ## Consciousness Integration
 
 Numbers can be imbued with consciousness and spiritual properties:
@@ -85,7 +85,7 @@ Numbers can be imbued with consciousness and spiritual properties:
 चेतनास्तरः = फलम्.चेतना.स्तरः();
 ध्यानस्थितिः = फलम्.वृत्तयः.स्थितिः();
 
-```text
+```
 ## Validation and Ethics
 
 The system implements Nyaya logic for validation:
@@ -98,7 +98,7 @@ The system implements Nyaya logic for validation:
     // Invalid number
 }
 
-```text
+```
 ## Property System
 
 Vaisheshika metaphysics guides property determination:
@@ -110,7 +110,7 @@ Vaisheshika metaphysics guides property determination:
 // Validate properties
 सत्यम् = वैशेषिक.गुणसत्यापनम्(गुणाः);
 
-```text
+```
 ## Constants and Sacred Numbers
 
 The system includes important mathematical and spiritual constants:
@@ -143,7 +143,7 @@ Errors are handled with consciousness and wisdom:
     त्रुटिः.ज्ञानेनसमाधानम्();
 }
 
-```text
+```
 ## Future Extensions
 
 Planned enhancements include:

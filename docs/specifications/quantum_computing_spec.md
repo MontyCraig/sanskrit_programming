@@ -15,7 +15,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     गुम्फनम्;       // Entanglement data
 }
 
-```text
+```
 ### 2.2 क्वान्टमपञ्जिका (Quantum Register)
 
 ```sanskrit
@@ -24,7 +24,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     स्थितिः;        // Register state
 }
 
-```text
+```
 ## 3. Quantum Operations
 
 ### 3.1 Single-Qubit Gates
@@ -58,7 +58,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     // Returns array of classical bits
 }
 
-```text
+```
 ## 4. Quantum State Representation
 
 ### 4.1 State Vectors
@@ -70,7 +70,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     कलाः;          // Phases
 }
 
-```text
+```
 ### 4.2 Density Matrices
 
 ```sanskrit
@@ -80,7 +80,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     शुद्धता;
 }
 
-```text
+```
 ## 5. Quantum Algorithms
 
 ### 5.1 Standard Algorithm Templates
@@ -102,7 +102,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     मापनानि;       // Measurements
 }
 
-```text
+```
 ## 6. Error Correction
 
 ### 6.1 Error Types
@@ -122,7 +122,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     संशोधनक्रिया;   // Correction procedure
 }
 
-```text
+```
 ## 7. Quantum-Classical Interface
 
 ### 7.1 Classical Control
@@ -132,7 +132,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     // Classical control operations
 }
 
-```text
+```
 ### 7.2 Hybrid Algorithms
 
 ```sanskrit
@@ -142,7 +142,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     सन्धानम्;
 }
 
-```text
+```
 ## 8. Optimization and Simulation
 
 ### 8.1 Circuit Optimization
@@ -162,7 +162,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     मापनानि;      // Measurement statistics
 }
 
-```text
+```
 ## 9. Integration with Classical Computing
 
 ### 9.1 Data Conversion
@@ -176,7 +176,7 @@ This document specifies the quantum computing features of the Sanskrit Programmi
     // Quantum to classical conversion
 }
 
-```text
+```
 ### 9.2 Resource Management
 
 - क्युबिट्प्रबन्धः (Qubit management)

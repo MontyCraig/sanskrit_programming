@@ -60,7 +60,7 @@ This document outlines the core spiritual principles that guide our computationa
   एकाधिकेन पूर्वेण        // By one more than the previous
   निखिलं नवतश्चरमं दशतः  // All from 9 and the last from 10
   ऊर्ध्वतिर्यग्भ्याम्     // Vertically and crosswise
-  ```text
+  ```
 ### 2. Sacred Geometry (यन्त्र-ज्यामिति)
 
 - **Principles**:
@@ -115,7 +115,7 @@ This document outlines the core spiritual principles that guide our computationa
     "तुरीय": "Transcendental"
 }
 
-```text
+```
 ### 2. Ethical Validation (नैतिक-सत्यापनम्)
 
 ```sanskrit
@@ -127,7 +127,7 @@ This document outlines the core spiritual principles that guide our computationa
     "अपरिग्रहः": "Non-possession"
 }
 
-```text
+```
 ### 3. Sound Integration (ध्वनि-समन्वयः)
 
 ```sanskrit
@@ -138,7 +138,7 @@ This document outlines the core spiritual principles that guide our computationa
     "नाद": "Cosmic sound"
 }
 
-```text
+```
 ## Advanced Concepts
 
 ### 1. Quantum-Consciousness Bridge (क्वान्टम्-चित्-सेतुः)

@@ -82,7 +82,7 @@ Sanskrit, often called "the perfect language" due to its precise grammatical str
 संख्या नाम अङ्कः = १०;  // Number variable declaration
 वर्णः नाम अक्षरम् = "क"; // Character declaration
 
-```text
+```
 ### 2. Function Definition
 
 ```sanskrit
@@ -90,7 +90,7 @@ Sanskrit, often called "the perfect language" due to its precise grammatical str
     प्रतिफल प्रथमः + द्वितीयः;
 }
 
-```text
+```
 ### 3. Class Definition
 
 ```sanskrit
@@ -104,7 +104,7 @@ Sanskrit, often called "the perfect language" due to its precise grammatical str
     }
 }
 
-```text
+```
 ## Benefits
 
 ### 1. Educational Value

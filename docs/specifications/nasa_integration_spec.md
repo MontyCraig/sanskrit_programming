@@ -37,7 +37,7 @@
     }
 }
 
-```text
+```
 ## 2. Integration with Existing Systems
 
 ### 2.1 Health Monitoring Enhancement
@@ -52,7 +52,7 @@
     }
 }
 
-```text
+```
 ### 2.2 Resource Optimization
 
 ```sanskrit
@@ -65,7 +65,7 @@
     }
 }
 
-```text
+```
 ## 3. Mission-Critical Features
 
 ### 3.1 Fault Tolerance
@@ -112,7 +112,7 @@
     }
 }
 
-```text
+```
 ## 5. Integration Strategy
 
 ### 5.1 Phase 1: Core Integration

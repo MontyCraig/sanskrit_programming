@@ -37,7 +37,7 @@
     }
 }
 
-```text
+```
 ## 2. Scaling Operations (मापनक्रियाः)
 
 ### 2.1 Micro to Macro (सूक्ष्मतः स्थूलम्)
@@ -61,7 +61,7 @@
     }
 }
 
-```text
+```
 ### 2.2 Macro to Micro (स्थूलतः सूक्ष्मम्)
 
 ```sanskrit
@@ -83,7 +83,7 @@
     }
 }
 
-```text
+```
 ## 3. Pattern Recognition (प्रतिमानज्ञानम्)
 
 ### 3.1 Core Patterns (मूलप्रतिमानानि)
@@ -109,7 +109,7 @@
     }
 }
 
-```text
+```
 ## 4. Applications (प्रयोगाः)
 
 ### 4.1 Quantum Computing
@@ -164,7 +164,7 @@
     }
 }
 
-```text
+```
 ### 5.2 Integration Guidelines
 
 - Maintain pattern consistency across scales

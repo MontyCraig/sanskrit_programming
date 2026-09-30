@@ -208,7 +208,7 @@ sanskrit_programming/
     ├── phase2_tasks.md
     └── ...
 
-```text
+```
 
 - The "docs" folder holds high-level documents, split into subfolders (e.g., "concept" and "roadmap").
 

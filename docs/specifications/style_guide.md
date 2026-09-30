@@ -104,7 +104,7 @@ This style guide provides guidelines for writing clean, maintainable, and idioma
 // दिनाङ्क: YYYY-MM-DD
 // विवरण: Brief description in Sanskrit
 
-```text
+```
 ### 4.2 Function Documentation
 
 ```sanskrit
@@ -120,7 +120,7 @@ This style guide provides guidelines for writing clean, maintainable, and idioma
     // ...
 }
 
-```text
+```
 ### 4.3 Inline Comments
 
 - Use Sanskrit for logical explanations
@@ -162,14 +162,14 @@ This style guide provides guidelines for writing clean, maintainable, and idioma
     // Error handling
 }
 
-```text
+```
 ### 6.2 Variable Declaration
 
 ```sanskrit
 संख्या मूल्यम् = ०;  // Initialize with default
 सूची फलानि = [];    // Empty collection
 
-```text
+```
 ### 6.3 Loop Constructs
 
 ```sanskrit
@@ -181,7 +181,7 @@ This style guide provides guidelines for writing clean, maintainable, and idioma
     // Condition-based loop
 }
 
-```text
+```
 ## 7. Performance Considerations
 
 ### 7.1 Memory Usage
@@ -219,7 +219,7 @@ This style guide provides guidelines for writing clean, maintainable, and idioma
     }
 }
 
-```text
+```
 ## 9. Version Control
 
 ### 9.1 Commit Messages
@@ -253,7 +253,7 @@ This style guide provides guidelines for writing clean, maintainable, and idioma
 
 }
 
-```text
+```
 ### 10.2 Class Definition
 
 ```sanskrit

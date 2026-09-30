@@ -14,7 +14,7 @@ The Sanskrit Programming Language is a groundbreaking project that bridges ancie
 
 - **NASA-Inspired Architecture**: Incorporating reliability and safety principles from space-grade software
 
-**Website**: [<https://github.com/MontyCraig/sanskrit_programming](https://github.com/MontyCraig/sanskrit_programming)>
+**Website**: [https://github.com/MontyCraig/sanskrit_programming](https://github.com/MontyCraig/sanskrit_programming)
 
 **Topics**: #Sanskrit #Programming #QuantumComputing #SoundComputing #FractalComputation #NASA #AncientWisdom #ModernTechnology
 
@@ -58,7 +58,7 @@ sanskrit_programming/
 
 └── community/             # Community guidelines and documentation
 
-```text
+```
 ## Getting Started
 
 Documentation is organized as follows:
@@ -85,4 +85,4 @@ For questions, suggestions, or collaboration:
 
 - **Email**: montycraig@hotmail.com
 
-- **GitHub**: [@MontyCraig](<https://github.com/MontyCraig)>
+- **GitHub**: [@MontyCraig](<https://github.com/MontyCraig>)

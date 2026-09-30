@@ -17,7 +17,7 @@
     }
 }
 
-```text
+```
 ### 1.2 अदेङ्गुणः (१.१.२)
 
 **Principle**: State transformation
@@ -28,7 +28,7 @@
     // Transform state according to rules
 }
 
-```text
+```
 ## 2. पतञ्जलि Yoga Sutras for Process Control
 
 ### 2.1 योगश्चित्तवृत्तिनिरोधः (१.२)
@@ -45,7 +45,7 @@
     }
 }
 
-```text
+```
 ### 2.2 अभ्यासवैराग्याभ्यां तन्निरोधः (१.१२)
 
 **Principle**: Practice and detachment in algorithms
@@ -59,7 +59,7 @@
     }
 }
 
-```text
+```
 ## 3. न्याय Sutras for Logical Operations
 
 ### 3.1 प्रमाणप्रमेयसंशयप्रयोजन (१.१.१)
@@ -76,7 +76,7 @@
     }
 }
 
-```text
+```
 ## 4. वैशेषिक Sutras for Data Classification
 
 ### 4.1 द्रव्यगुणकर्मसामान्य (१.१.४)
@@ -94,7 +94,7 @@
     }
 }
 
-```text
+```
 ## 5. मीमांसा Sutras for Interpretation
 
 ### 5.1 अर्थैकत्वात् (१.२)
@@ -111,7 +111,7 @@
     }
 }
 
-```text
+```
 ## 6. वेदान्त Sutras for System Integration
 
 ### 6.1 अथातो ब्रह्मजिज्ञासा (१.१.१)
@@ -128,7 +128,7 @@
     }
 }
 
-```text
+```
 ## Implementation Guidelines
 
 ### 1. Code Organization
@@ -156,7 +156,7 @@
     प्रमाणप्रक्रिया.सत्यापनम्();
 }
 
-```text
+```
 ### 3. Error Handling
 
 ```sanskrit
@@ -168,7 +168,7 @@
     ज्ञानम्.उपयोगः(दोषः);
 }
 
-```text
+```
 ## Application Examples
 
 ### 1. Consciousness-Aware Processing
@@ -185,7 +185,7 @@
     }
 }
 
-```text
+```
 ### 2. Ethical Computing
 
 ```sanskrit
@@ -199,7 +199,7 @@
     }
 }
 
-```text
+```
 ## Integration Strategy
 
 1. **Foundation**

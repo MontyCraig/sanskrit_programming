@@ -60,7 +60,7 @@ sanskrit_programming/
 
 └── src/                    # Source code
 
-```text
+```
 ## Getting Started
 
 1. Clone the repository

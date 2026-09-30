@@ -35,7 +35,7 @@ All keywords are Sanskrit terms representing their programming concepts:
 
 क्रिया (kriyā)  - function
 
-```text
+```
 ### 2.3 Identifiers
 
 - Must start with a Devanagari letter
@@ -59,7 +59,7 @@ All keywords are Sanskrit terms representing their programming concepts:
 
 शून्य (śūnya)     - Null
 
-```text
+```
 ### 3.2 Complex Types
 
 ```sanskrit
@@ -71,7 +71,7 @@ All keywords are Sanskrit terms representing their programming concepts:
 
 वर्ग (varga)      - Class
 
-```text
+```
 ## 4. Grammar
 
 ### 4.1 Declarations
@@ -82,7 +82,7 @@ Variables follow Sanskrit's case system:
 संख्या नाम अङ्कः = १०;
 वर्णः नाम अक्षरम् = "क";
 
-```text
+```
 ### 4.2 Functions
 
 Functions use Sanskrit's verbal system:
@@ -92,7 +92,7 @@ Functions use Sanskrit's verbal system:
     प्रतिफल प्रथमः + द्वितीयः;
 }
 
-```text
+```
 ### 4.3 Control Structures
 
 ```sanskrit
@@ -106,7 +106,7 @@ Functions use Sanskrit's verbal system:
     // code
 }
 
-```text
+```
 ## 5. Standard Library
 
 ### 5.1 Core Modules
@@ -162,7 +162,7 @@ Functions use Sanskrit's verbal system:
 
 प्रकारदोष (Prakāradoṣa) - Type Error
 
-```text
+```
 ### 7.2 Error Handling Syntax
 
 ```sanskrit
@@ -172,7 +172,7 @@ Functions use Sanskrit's verbal system:
     // error handling
 }
 
-```text
+```
 ## 8. Compilation
 
 ### 8.1 Compilation Process

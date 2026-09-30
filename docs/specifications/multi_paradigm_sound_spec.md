@@ -21,7 +21,7 @@
     }
 }
 
-```text
+```
 ### 1.2 Vibration-Based Memory Access
 
 ```sanskrit
@@ -35,7 +35,7 @@
     }
 }
 
-```text
+```
 ## 2. Multi-Paradigm Integration (बहुपद्धतिसमन्वयः)
 
 ### 2.1 Functional Aspects (क्रियात्मकांशाः)
@@ -51,7 +51,7 @@
     }
 }
 
-```text
+```
 ### 2.2 Object-Oriented Aspects (वस्तुमूलकांशाः)
 
 ```sanskrit
@@ -67,7 +67,7 @@
     }
 }
 
-```text
+```
 ### 2.3 Declarative Aspects (घोषणात्मकांशाः)
 
 ```sanskrit
@@ -83,7 +83,7 @@
     }
 }
 
-```text
+```
 ## 3. Assembly Level Integration (यन्त्रभाषासमन्वयः)
 
 ### 3.1 Sound to Machine Code
@@ -99,7 +99,7 @@ _start:
     call convert_to_machine     ; Convert to instructions
     jmp execute_pattern         ; Execute resulting code
 
-```text
+```
 ### 3.2 Vibration-Based Optimization
 
 ```sanskrit
@@ -113,7 +113,7 @@ _start:
     }
 }
 
-```text
+```
 ## 4. Sound Pattern Recognition (शब्दप्रतिमानज्ञानम्)
 
 ### 4.1 Basic Sound Patterns
@@ -149,7 +149,7 @@ _start:
     }
 }
 
-```text
+```
 ## 5. Fractal Sound Integration (सूक्ष्मध्वनिसमन्वयः)
 
 ### 5.1 Sound-Based Scaling
@@ -168,7 +168,7 @@ _start:
     }
 }
 
-```text
+```
 ### 5.2 Harmonic Computation
 
 ```sanskrit
@@ -181,7 +181,7 @@ _start:
     }
 }
 
-```text
+```
 ## 6. Implementation Strategy
 
 ### 6.1 Compilation Process
